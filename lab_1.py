@@ -54,7 +54,6 @@ class Concrete:
     def full_concrete_mass(self, capacity_mass: float) -> None:
         """
         Функция, подсчитывающая массу бетонной смеси с массой емкости
-
         :return: Масса бетонной смеси с емкостью
         Примеры:
         >>> concrete = Concrete(5, 30, 2.5)
