@@ -1,4 +1,3 @@
-# TODO Написать 3 класса с документацией и аннотацией типов
 import doctest
 
 
@@ -35,7 +34,7 @@ class Concrete:
         Функция которая проверяет примняются ли все ли составляющие бетона
         Примеры:
         >>> concrete = Concrete(5, 30, 2.5)
-        >>> glass.is_empty_glass()
+        >>> concrete.is_get_concrete()
         """
         ...
 
@@ -47,21 +46,22 @@ class Concrete:
         то возвращается ошибка.
         :return: Значение реально извлекаемой массы
         Примеры:
-        >>> concrete = Concrete()
+        >>> concrete = Concrete(5, 30, 2.5)
         >>> concrete.remove_aggregate_from_concrete(5)
         """
         ...
 
     def full_concrete_mass(self, capacity_mass: float) -> None:
         """
-        Функция, подсчитывающая массу бетонной смеси с массой ёмкости
+        Функция, подсчитывающая массу бетонной смеси с массой емкости
 
-        :return: Масса бетонной смеси
+        :return: Масса бетонной смеси с емкостью
         Примеры:
-        >>> concrete = Concrete()
-        >>> concrete.full_concrete_mass(5)
+        >>> concrete = Concrete(5, 30, 2.5)
+        >>> concrete.full_concrete_mass(7)
         """
         ...
+
 
 if __name__ == "__main__":
     # TODO работоспособность экземпляров класса проверить с помощью doctest
